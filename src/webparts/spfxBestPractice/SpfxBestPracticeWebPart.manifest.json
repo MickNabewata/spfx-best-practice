@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "77829a00-8516-4a10-89d1-05d2a8885a65",
+  "alias": "SpfxBestPracticeWebPart",
+  "componentType": "WebPart",
+  "version": "*",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "supportedHosts": ["SharePointWebPart"],
+
+  "preconfiguredEntries": [{
+    "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+    "group": { "en-us": "Other", "default": "その他" },
+    "title": { "en-us": "SPFx Best Practicies", "default": "SPFx開発ベストプラクティス集" },
+    "description": { "en-us": "Best practicies for SPFx.", "default": "SPFx開発のベストプラクティス集です。" },
+    "officeFabricIconFontName": "HintText",
+    "properties": {
+      "title": "",
+      "dataType": "SiteUsers",
+      "variant": "Card"
+    }
+  }]
+}

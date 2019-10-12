@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "spfx-best-practice-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/spfxBestPractice/SpfxBestPracticeWebPart.js",
+          "manifest": "./src/webparts/spfxBestPractice/SpfxBestPracticeWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "SpfxBestPracticeWebPartStrings": "lib/webparts/spfxBestPractice/loc/{locale}.js"
+  }
+}

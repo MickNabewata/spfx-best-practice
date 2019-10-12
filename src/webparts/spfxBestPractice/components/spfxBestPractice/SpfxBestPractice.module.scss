@@ -1,0 +1,50 @@
+@import '../../Theme.module.scss';
+
+.spfxBestPractice {
+  .container {
+    margin: 0px auto;
+    padding: 0px 10px;
+  }
+
+  .rendering {
+    margin-left: 10px;
+  }
+
+  .title {
+    padding-top: 10px;
+    padding-left: 10px;
+
+    @include mq-up(sm) {
+      font-size: 24px;
+      font-weight: 100;
+    }
+
+    @include mq-down(sm) {
+      font-size: 21px;
+      font-weight: 300;
+    }
+  }
+
+  .titleInput {
+    & input {
+      @include mq-up(sm) {
+        font-size: 24px;
+        font-weight: 100;
+      }
+
+      @include mq-down(sm) {
+        font-size: 21px;
+        font-weight: 300;
+      }
+    }
+
+    & div {
+      height: 50px;
+    }
+  }
+
+  .error {
+    padding-left: 10px;
+    font-size: 12px;
+  }
+}

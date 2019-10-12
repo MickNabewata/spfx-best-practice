@@ -1,0 +1,43 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+
+/** 共通スタイル */
+
+a {
+    & :hover {
+        color: "[theme: linkHovered]"
+    }
+
+    color: "[theme: link]"
+}
+
+/** 変数定義 */
+
+$breakpoint-up: (
+    'xs': 'screen and (min-width: 320px)',
+    'sm': 'screen and (min-width: 480px)',
+    'md': 'screen and (min-width: 768px)',
+    'lg': 'screen and (min-width: 1000px)',
+    'xl': 'screen and (min-width: 1200px)'
+) !default;
+
+$breakpoint-down: (
+    'xs': 'screen and (max-width: 319px)',
+    'sm': 'screen and (max-width: 479px)',
+    'md': 'screen and (max-width: 767px)',
+    'lg': 'screen and (max-width: 999px)',
+    'xl': 'screen and (max-width: 1199px)',
+) !default;
+
+/** mixin定義 */
+
+@mixin mq-up($breakpoint: md) {
+    @media #{map-get($breakpoint-up, $breakpoint)} {
+        @content;
+    }
+}
+  
+@mixin mq-down($breakpoint: md) {
+    @media #{map-get($breakpoint-down, $breakpoint)} {
+        @content;
+    }
+}

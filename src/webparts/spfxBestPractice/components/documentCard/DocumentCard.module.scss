@@ -1,0 +1,13 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+
+.documentCard {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .item {
+    margin: 10px;
+    width: 200px;
+  }
+}
